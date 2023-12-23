@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    font-family: Poppins, Noto Serif Bengali;
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+.grid-container{
+    width: 100%;
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 12px;
+    background-image: linear-gradient(#002839, #012638);
+    color: #d2c984;
+}
+
+
+
+
+
+nav{
+    display: flex;
+    grid-column: 1/-1;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #012839;
+    height: 75px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #d2c984;
+}
+.top-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-logo img{
+    width: 55px;
+    height: auto;
+}
+.top-buttons{
+    display: flex;
+    align-items: center;
+}
+.top-buttons button{
+    background-image: linear-gradient(#d2c984, #c0b143);
+    width: 60px;
+    height: fit-content;
+    margin-left: 5px;
+    padding: 5px;
+    border: 1px solid #d2c984;
+    border-radius: 2px;
+}
+.top-buttons button a{
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+
+main{
+    grid-column: 1/-1;
+    margin-top: 75px;
+    padding: 0px 20px 50px 20px;
+}
+main section p{
+    margin: 18px 0px;
+    text-align: justify;
+}
+main section div{
+    scroll-margin-top: 75px;
+}
+.quran{
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+
+
+
+
+aside{
+    display: flex;
+    grid-column: 1/-1;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    overflow-x: auto;
+    background-color: #002738;
+    height: 50px;
+    border-top: 1px solid #d2c984;
+    border-left: none;
+}
+aside a{
+    color: #d2c984;
+    text-align: center;
+    text-decoration: none;
+    text-wrap: nowrap;
+    background-color: #002838;
+    margin: 2px 0px 2px 20px;
+    padding: 1px  10px 0px 10px;
+    border: 1px solid #d2c984;
+    border-radius: 2px;
+}
+
+
+
+
+
+@media (min-width: 768px){
+    main{
+        grid-column: 1/ 10;
+    }
+
+
+
+
+
+    aside{
+        flex-direction: column;
+        grid-column: 10/ -1;
+        align-items: start;
+        top: 75px;
+        left: 75%;
+        overflow-y: auto;
+        height: 100%;
+        border-top: none;
+        border-left: 1px solid #d2c984;
+        padding-bottom: 80px;
+    }
+    aside a{
+        text-align: left;
+        text-wrap: wrap;
+        margin: 5px 5px 0px 5px;
+        padding: 2px 5px;
+        width: 96%;
+    }
+}
