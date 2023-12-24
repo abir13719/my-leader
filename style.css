@@ -54,22 +54,28 @@ nav{
     display: flex;
     align-items: center;
 }
-.top-buttons button{
+.button{
+    font-size: 14px;
+    font-weight: 600;
+    color: #012839;
     background-image: linear-gradient(#d2c984, #c0b143);
     width: 60px;
-    height: fit-content;
     margin-left: 5px;
     padding: 5px;
     border: 1px solid #d2c984;
     border-radius: 2px;
 }
-.top-buttons button a{
-    font-weight: 600;
-    color: black;
-    text-decoration: none;
+.button:hover{
+    color: #d2c984;
+    background-image: linear-gradient(#00161f, #01435e);
+    border-color: #ffbd72;
+    transition: 0.4s ease-in-out;
 }
-
-
+.button:active{
+    color: #0e89b9;
+    background-color: #03506e;
+    border-color: #ff9b29;
+}
 
 
 
@@ -120,6 +126,16 @@ aside a{
     padding: 1px  10px 0px 10px;
     border: 1px solid #d2c984;
     border-radius: 2px;
+}
+aside a:hover{
+    color: #fff5a5;
+    background-color: #00161f;
+    border-color: #ffbd72;
+}
+aside a:active{
+    color: #0e89b9;
+    background-color: #03506e;
+    border-color: #ff9b29;
 }
 
 
